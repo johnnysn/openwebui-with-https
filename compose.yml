@@ -16,6 +16,7 @@ services:
       - ./nginx/certificates:/etc/nginx/certificates
     ports:
       - "443:443"
+    restart: always
     depends_on:
       - openwebui
       
